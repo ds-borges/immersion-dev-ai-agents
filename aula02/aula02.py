@@ -19,7 +19,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
 # Caminho dos arquivos PDF
-DOCS_PATH = "enterprise_politics/"
+DOCS_PATH =  Path("../enterprise_politics")  # Pega PDFs da pasta "enterprise" no nível anterior que este script
 CHUNK_SIZE = 100
 CHUNK_OVERLAP = 0
 SEARCH_TYPE = "similarity_score_threshold"
