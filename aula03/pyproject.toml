@@ -1,0 +1,28 @@
+[project]
+name = "aula03"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ds-borges",email = "diego97sousa@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "langgraph (>=0.6.7,<0.7.0)",
+    "langchain-google-genai (>=2.1.10,<3.0.0)",
+    "pydantic (>=2.11.9,<3.0.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-community (>=0.3.29,<0.4.0)",
+    "pymupdf (>=1.26.4,<2.0.0)",
+    "langchain-text-splitters (>=0.3.11,<0.4.0)",
+    "faiss-cpu (>=1.12.0,<2.0.0)",
+    "google-genai (>=1.36.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "aula03", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
